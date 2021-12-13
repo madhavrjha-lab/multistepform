@@ -18,6 +18,18 @@ body {
   position: relative;
 }
 
+@media (max-width: 768px) {
+  #msform {
+    width: 80%;
+  }
+}
+
+@media (max-width: 576px) {
+  #msform {
+    width: 95%;
+  }
+}
+
 #msform label {
   display: block;
   text-align: left;
