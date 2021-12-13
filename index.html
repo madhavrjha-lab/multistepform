@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <!-- Required Meta Tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- jQuery easing plugin -->
+  <script src="http://thecodeplayer.com/uploads/js/jquery.easing.min.js" type="text/javascript"></script>
+
+  <title>School Name | Admission Form</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+  <!-- multi-step form -->
+  <form id="msform">
+
+    <!-- progressbar -->
+    <ul id="progressbar">
+      <li class="active"></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <!-- fieldsets -->
+
+
+
+
+
+
+    <fieldset>
+      <h2 class="fs-title">Application Details</h2>
+      <h3 class="fs-subtitle">Step 1 of 7</h3>
+
+      <label for="applicationDate">Select Application Date:</label>
+      <input type="date" name="" id="applicationDate">
+
+      <label for="applicationID">Application ID:</label>
+      <input type="text" name="" id="applicationID" value="23" readonly>
+
+      <label for="yearAppliedFor">Academic Year</label>
+      <select name="" id="yearAppliedFor">
+        <option selected disabled>Select Academic Year</option>
+        <option value="2022">2022</option>
+        <option value="2023">2023</option>
+      </select>
+
+      <label for="currentGrade">Current Grade</label>
+      <select name="" id="currentGrade">
+        <option selected disabled>Select Current Grade</option>
+        <option value="1">Grade 1</option>
+        <option value="2">Grade 2</option>
+        <option value="3">Grade 3</option>
+        <option value="4">Grade 4</option>
+        <option value="5">Grade 5</option>
+        <option value="6">Grade 6</option>
+        <option value="7">Grade 7</option>
+        <option value="8">Grade 8</option>
+        <option value="9">Grade 9</option>
+        <option value="10">Grade 10</option>
+        <option value="11">Grade 11</option>
+        <option value="12">Grade 12</option>
+      </select>
+
+      <label for="gradeApplyingFor">Grade Applying For</label>
+      <select name="" id="gradeApplyingFor">
+        <option selected disabled>Select Grade</option>
+        <option value="1">Grade 1</option>
+        <option value="2">Grade 2</option>
+        <option value="3">Grade 3</option>
+        <option value="4">Grade 4</option>
+        <option value="5">Grade 5</option>
+        <option value="6">Grade 6</option>
+        <option value="7">Grade 7</option>
+        <option value="8">Grade 8</option>
+        <option value="9">Grade 9</option>
+        <option value="10">Grade 10</option>
+        <option value="11">Grade 11</option>
+        <option value="12">Grade 12</option>
+      </select>
+
+      <!-- Next Button -->
+      <input type="button" name="next" class="next action-button" value="Next" />
+    </fieldset>
+
+
+
+
+
+
+
+
+
+    <fieldset>
+      <h2 class="fs-title">Learner Details</h2>
+      <h3 class="fs-subtitle">Step 2 of 7</h3>
+
+      <label for="learnerSurname">Learner's Surname:</label>
+      <input type="text" id="learnerSurname" placeholder="Enter Surname">
+
+      <label for="learnerFirstName">Learner's First Name:</label>
+      <input type="text" id="learnerFirstName" placeholder="Enter First Name">
+
+      <label for="learnerDateOfBirth">Learner's Date of Birth:</label>
+      <input type="date" id="learnerDateOfBirth">
+
+      <label for="learnerGender">Learner's Gender</label>
+      <select name="" id="learnerGender">
+        <option selected disabled>Select Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="learnerEmail">Learner's Email</label>
+      <input type="email" id="learnerEmail" placeholder="Enter Email">
+
+      <label for="learnerMobile">Learner's Mobile</label>
+      <input type="text" id="learnerMobile" placeholder="Enter Phone">
+
+      <label for="learnerReligion">Learner's Religion</label>
+      <select name="" id="learnerReligion">
+        <option selected disabled>Select Religion</option>
+        <option value="Christianity">Christianity</option>
+        <option value="Islam">Islam</option>
+        <option value="Hinduism">Hinduism</option>
+        <option value="Traditional African">Traditional African</option>
+        <option value="Judaism">Judaism</option>
+      </select>
+
+      <label for="learnerRace">Learner's Race</label>
+      <select name="" id="learnerRace">
+        <option selected disabled>Select Race Group</option>
+        <option value="Black African">Black African</option>
+        <option value="Coloured">Coloured</option>
+        <option value="Indian">Indian</option>
+        <option value="Asian">Asian</option>
+        <option value="Chinese">Chinese</option>
+      </select>
+
+      <!-- Previous and Next Button -->
+      <input type="button" name="previous" class="previous action-button" value="Previous" />
+      <input type="button" name="next" class="next action-button" value="Next" />
+    </fieldset>
+
+
+
+
+
+
+
+
+    <fieldset>
+      <h2 class="fs-title">Parents Details</h2>
+      <h3 class="fs-subtitle">Step 3 of 7</h3>
+
+      <h3>Parent 1 Details</h3>
+      <label>Relation with Parent 1</label>
+      <select name="" id="">
+        <option selected disabled> Select Relation</option>
+        <option value="father">Father</option>
+        <option value="mother">Mother</option>
+        <option value="grandmother">GrandMother</option>
+        <option value="grandfather">GrandFather</option>
+      </select>
+
+      <label for="">Title</label>
+      <select name="" id="">
+        <option selected disabled>Select Title</option>
+        <option value="Mr">Mr.</option>
+        <option value="Mrs">Mrs.</option>
+        <option value="Miss">Miss.</option>
+        <option value="Dr">Dr.</option>
+      </select>
+
+      <label for="">Parent 1 Surname</label>
+      <input type="text" placeholder="Enter Surname">
+
+      <label for="">Parent 1 First Name</label>
+      <input type="text" placeholder="Enter First Name">
+
+      <label for="">Parent 1 Email</label>
+      <input type="email" placeholder="Enter Email">
+
+      <label for="">Parent 1 Mobile</label>
+      <input type="text" placeholder="Enter Mobile">
+
+      <label for="">Parent 1 NID</label>
+      <input type="text" placeholder="Enter NID">
+
+      <label for="">Parent 1 SID</label>
+      <input type="text" value="y5jn3g32hd8dh3id8dj3" readonly>
+
+      <label for="">Address Line 1</label>
+      <input type="text" placeholder="Enter Address">
+
+      <label for="">Address Line 2</label>
+      <input type="text" placeholder="Enter Address">
+
+      <label for="">City</label>
+      <input type="text" placeholder="Enter City">
+
+      <label for="">Province</label>
+      <input type="text" placeholder="Enter Province">
+
+      <label for="">Post Code</label>
+      <input type="text" placeholder="Enter Postcode">
+
+      <label for="parent1Religion">Parent 1 Religion</label>
+      <select name="" id="parent1Religion">
+        <option selected disabled>Select Religion</option>
+        <option value="Christianity">Christianity</option>
+        <option value="Islam">Islam</option>
+        <option value="Hinduism">Hinduism</option>
+        <option value="Traditional African">Traditional African</option>
+        <option value="Judaism">Judaism</option>
+      </select>
+
+      <label for="parent1Race">Parent 1 Race</label>
+      <select name="" id="parent1Race">
+        <option selected disabled>Select Race Group</option>
+        <option value="Black African">Black African</option>
+        <option value="Coloured">Coloured</option>
+        <option value="Indian">Indian</option>
+        <option value="Asian">Asian</option>
+        <option value="Chinese">Chinese</option>
+      </select>
+
+      <h3>Parent 2 Details (Optional)</h3>
+
+      <label>Relation with Parent 2</label>
+      <select name="" id="">
+        <option selected disabled> Select Relation</option>
+        <option value="father">Father</option>
+        <option value="mother">Mother</option>
+        <option value="grandmother">GrandMother</option>
+        <option value="grandfather">GrandFather</option>
+      </select>
+
+      <label for="">Title</label>
+      <select name="" id="">
+        <option selected disabled>Select Title</option>
+        <option value="Mr">Mr.</option>
+        <option value="Mrs">Mrs.</option>
+        <option value="Miss">Miss.</option>
+        <option value="Dr">Dr.</option>
+      </select>
+
+      <label for="">Parent 2 Surname</label>
+      <input type="text" placeholder="Enter Surname">
+
+      <label for="">Parent 2 First Name</label>
+      <input type="text" placeholder="Enter First Name">
+
+      <label for="">Parent 2 Email</label>
+      <input type="email" placeholder="Enter Email">
+
+      <label for="">Parent 2 Mobile</label>
+      <input type="text" placeholder="Enter Mobile">
+
+      <label for="">Parent 2 NID</label>
+      <input type="text" placeholder="Enter NID">
+
+      <label for="">Parent 2 SID</label>
+      <input type="text" value="y5jn3g32hd8dh3id8dj3" readonly>
+
+      <label for="">Address Line 1</label>
+      <input type="text" placeholder="Enter Address">
+
+      <label for="">Address Line 2</label>
+      <input type="text" placeholder="Enter Address">
+
+      <label for="">City</label>
+      <input type="text" placeholder="Enter City">
+
+      <label for="">Province</label>
+      <input type="text" placeholder="Enter Province">
+
+      <label for="">Post Code</label>
+      <input type="text" placeholder="Enter Postcode">
+
+      <label for="parent1Religion">Parent 2 Religion</label>
+      <select name="" id="parent1Religion">
+        <option selected disabled>Select Religion</option>
+        <option value="Christianity">Christianity</option>
+        <option value="Islam">Islam</option>
+        <option value="Hindism">Hinduism</option>
+        <option value="Traditional African">Traditional African</option>
+        <option value="Judaism">Judaism</option>
+      </select>
+
+      <label for="parent1Race">Parent 2 Race</label>
+      <select name="" id="parent1Race">
+        <option selected disabled>Select Race Group</option>
+        <option value="Black African">Black African</option>
+        <option value="Coloured">Coloured</option>
+        <option value="Indian">Indian</option>
+        <option value="Asian">Asian</option>
+        <option value="Chinese">Chinese</option>
+      </select>
+
+      <!-- Previous and Next Button -->
+      <input type="button" name="previous" class="previous action-button" value="Previous" />
+      <input type="button" name="next" class="next action-button" value="Next" />
+    </fieldset>
+
+
+
+
+
+
+
+
+
+    <fieldset>
+      <h2 class="fs-title">Other Details</h2>
+      <h3 class="fs-subtitle"></h3>
+      <input type="text" name="fname" placeholder="Crop name" />
+      <input type="button" name="previous" class="previous action-button" value="Previous" />
+      <input type="button" name="next" class="next action-button" value="Next" />
+    </fieldset>
+    <fieldset>
+      <h2 class="fs-title">Enter the daily needs of the crop</h2>
+      <h3 class="fs-subtitle">Elements in kg/day</h3>
+      <input type="text" name="fname" placeholder="N in kg N/day" />
+      <input type="text" name="lname" placeholder="P in kg P/day" />
+      <input type="text" name="phone" placeholder="K in kg K/day" />
+      <input type="text" name="lname" placeholder="Ca in kg Ca/day" />
+      <input type="text" name="phone" placeholder="Mg in kg Mg/day" />
+      <input type="button" name="previous" class="previous action-button" value="Previous" />
+      <input type="button" name="next" class="next action-button" value="Next" />
+    </fieldset>
+    <fieldset>
+      <h2 class="fs-title">Indicate the composition of the water</h2>
+      <h3 class="fs-subtitle">This step is optional <br /> If you have no water tested, proceed to next step</h3>
+      <select id="selectWtrAnalysis" onChange="changeOutput()">
+        <option value="" disabled selected style='display:none;'>Analysis of water expressed in</option>
+        <option value="noWtrTst">No tested water</option>
+        <option value="ppm">Ppm (mg/kg)</option>
+        <option value="meq">Meq (milliequivalents per liter)</option>
+      </select>
+      <div id="divPpmMeq" style="display:none">
+        <input type="text" name="fname" placeholder="N-NO3" />
+        <input type="text" name="lname" placeholder="N-NH4" />
+        <input type="text" name="phone" placeholder="P" />
+        <input type="text" name="fname" placeholder="K" />
+        <input type="text" name="lname" placeholder="Ca" />
+        <input type="text" name="phone" placeholder="Mg" />
+      </div>
+      <input type="button" name="previous" class="previous action-button" value="Previous" />
+      <input type="button" name="next" class="next action-button" value="Next" />
+    </fieldset>
+    <fieldset>
+      <h2 class="fs-title">Choose the proportion of K supplied as SoluPotasse (%)</h2>
+      <h3 class="fs-subtitle"></h3>
+      <input type="text" name="fname" placeholder="Proportion of K (%)" />
+      <input type="button" name="previous" class="previous action-button" value="Previous" />
+      <input type="button" name="next" class="next action-button" value="Next" />
+    </fieldset>
+  </form>
+
+  <script src="./js/main.js"></script>
+
+</body>
+
+</html>
