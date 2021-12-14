@@ -48,20 +48,20 @@
       </p>
 
       <label for="applicationDate">Select Application Date <span class="asterisk">*</span></label>
-      <input type="date" name="" value="" id="applicationDate" required />
+      <input type="date" name="" value="" id="applicationDate" />
 
       <label for="applicationID">Application ID <small>(please, note it down)</small></label>
       <input type="text" name="" id="applicationID" value="23" readonly />
 
       <label for="yearAppliedFor">Academic Year <span class="asterisk">*</span></label>
-      <select name="" id="yearAppliedFor" required>
+      <select name="" id="yearAppliedFor">
         <option selected disabled value="">Select Academic Year</option>
         <option value="2022">2022</option>
         <option value="2023">2023</option>
       </select>
 
       <label for="currentGrade">Current Grade <span class="asterisk">*</span></label>
-      <select name="" id="currentGrade" required>
+      <select name="" id="currentGrade">
         <option disabled selected value="">Select Current Grade</option>
         <option value="1">Grade 1</option>
         <option value="2">Grade 2</option>
@@ -78,7 +78,7 @@
       </select>
 
       <label for="gradeApplyingFor">Grade Applying For <span class="asterisk">*</span></label>
-      <select name="" id="gradeApplyingFor" required>
+      <select name="" id="gradeApplyingFor">
         <option selected disabled value="">Select Grade</option>
         <option value="1">Grade 1</option>
         <option value="2">Grade 2</option>
@@ -117,16 +117,16 @@
       </p>
 
       <label for="learnerSurname">Learner's Surname <span class="asterisk">*</span></label>
-      <input type="text" id="learnerSurname" placeholder="Enter Surname" required />
+      <input type="text" id="learnerSurname" placeholder="Enter Surname" />
 
       <label for="learnerFirstName">Learner's First Name <span class="asterisk">*</span></label>
-      <input type="text" id="learnerFirstName" placeholder="Enter First Name" required />
+      <input type="text" id="learnerFirstName" placeholder="Enter First Name" />
 
       <label for="learnerDateOfBirth">Learner's Date of Birth <span class="asterisk">*</span></label>
-      <input type="date" id="learnerDateOfBirth" required />
+      <input type="date" id="learnerDateOfBirth" />
 
       <label for="learnerGender">Learner's Gender <span class="asterisk">*</span></label>
-      <select name="" id="learnerGender" required>
+      <select name="" id="learnerGender">
         <option selected disabled value="">Select Gender</option>
         <option value="male">Male</option>
         <option value="female">Female</option>
@@ -137,7 +137,7 @@
       <input type="email" id="learnerEmail" placeholder="Enter Email" />
 
       <label for="learnerMobile">Learner's Mobile</label>
-      <input type="text" id="learnerMobile" placeholder="Enter Phone" />
+      <input type="number" id="learnerMobile" placeholder="Enter Phone" />
 
       <label for="learnerReligion">Learner's Religion</label>
       <select name="" id="learnerReligion">
@@ -178,8 +178,8 @@
 
       <h3>Parent 1 Details</h3>
       <label>Relation with Parent 1 <span class="asterisk">*</span></label>
-      <select name="" id="" required>
-        <option selected disabled>Select Relation</option>
+      <select name="" id="realtionWithParent1">
+        <option selected disabled value="">Select Relation</option>
         <option value="father">Father</option>
         <option value="mother">Mother</option>
         <option value="grandmother">GrandMother</option>
@@ -187,7 +187,7 @@
       </select>
 
       <label for="">Title <span class="asterisk">*</span></label>
-      <select name="" id="" required>
+      <select name="" id="parent1title">
         <option selected disabled>Select Title</option>
         <option value="Mr">Mr.</option>
         <option value="Mrs">Mrs.</option>
@@ -196,16 +196,16 @@
       </select>
 
       <label for="">Parent 1 Surname <span class="asterisk">*</span></label>
-      <input type="text" placeholder="Enter Surname" required />
+      <input type="text" id="paren1Surname" placeholder="Enter Surname" />
 
       <label for="">Parent 1 First Name <span class="asterisk">*</span></label>
-      <input type="text" placeholder="Enter First Name" required />
+      <input type="text" id="parent1FirstName" placeholder="Enter First Name" />
 
       <label for="">Parent 1 Email <span class="asterisk">*</span></label>
-      <input type="email" placeholder="Enter Email" required />
+      <input type="email" id="parent1Email" placeholder="Enter Email" />
 
       <label for="">Parent 1 Mobile <span class="asterisk">*</span></label>
-      <input type="text" placeholder="Enter Mobile" required />
+      <input type="text" id="parent1Mobile" placeholder="Enter Mobile" />
 
       <label for="">Parent 1 NID</label>
       <input type="text" placeholder="Enter NID" />
@@ -214,19 +214,19 @@
       <input type="text" value="y5jn3g32hd8dh3id8dj3" readonly />
 
       <label for="">Address Line 1 <span class="asterisk">*</span></label>
-      <input type="text" placeholder="Enter Address" required />
+      <input type="text" id="parent1Address" placeholder="Enter Address" />
 
-      <label for="">Address Line 2 <span class="asterisk">*</span></label>
-      <input type="text" placeholder="Enter Address" required />
+      <label for="">Address Line 2 </label>
+      <input type="text" placeholder="Enter Address" />
 
       <label for="">City <span class="asterisk">*</span></label>
-      <input type="text" placeholder="Enter City" required />
+      <input type="text" id="parent1City" placeholder="Enter City" />
 
       <label for="">Province </label>
       <input type="text" placeholder="Enter Province" />
 
       <label for="">Post Code <span class="asterisk">*</span></label>
-      <input type="text" placeholder="Enter Postcode" required />
+      <input type="text" id="parent1PostCode" placeholder="Enter Postcode" />
 
       <label for="parent1Religion">Parent 1 Religion</label>
       <select name="" id="parent1Religion">
@@ -398,19 +398,19 @@
       </p>
 
       <label for="">Learner ID Page <span class="asterisk">*</span></label>
-      <input type="file" name="" id="" required />
+      <input type="file" name="" id="learnerIDPage" />
 
       <label for="">Immunization Certificate</label>
       <input type="file" name="" id="" />
 
       <label for="">Birth Certificate <span class="asterisk">*</span></label>
-      <input type="file" name="" id="" required />
+      <input type="file" name="" id="learnerBirthCertificate" />
 
       <label for="">Passport</label>
       <input type="file" />
 
       <label for="">Parent 1 ID Page <span class="asterisk">*</span></label>
-      <input type="file" required />
+      <input type="file" id="parent1IDPage" />
 
       <label for="">Parent 2 ID Page</label>
       <input type="file" name="" id="" />
@@ -429,7 +429,7 @@
       <h3>Application ID: <strong>23</strong></h3>
       <h3>SID: <strong>6fgd7sgd5as6sgd7s</strong></h3>
 
-      <input type="submit" id="final-submit" value="Submit Application" />
+      <input type="button" id="final-submit" value="Submit Application" />
 
       <div class="error-list hidden">
         <h3>The Application could not be submitted due to following errors</h3>
@@ -467,14 +467,25 @@
     const learnerDateOfBirth = document.querySelector('#learnerDateOfBirth');
     const learnerGender = document.querySelector('#learnerGender');
 
+    const realtionWithParent1 = document.querySelector('#realtionWithParent1');
+    const parent1title = document.querySelector('#parent1title');
+    const paren1Surname = document.querySelector('#paren1Surname');
+    const parent1FirstName = document.querySelector('#parent1FirstName');
+    const parent1Email = document.querySelector('#parent1Email');
+    const parent1Mobile = document.querySelector('#parent1Mobile');
+    const parent1Address = document.querySelector('#parent1Address');
+    const parent1City = document.querySelector('#parent1City');
+    const parent1PostCode = document.querySelector('#parent1PostCode');
+
+    const learnerIDPage = document.querySelector('#learnerIDPage');
+    const learnerBirthCertificate = document.querySelector('#learnerBirthCertificate');
+    const parent1IDPage = document.querySelector('#parent1IDPage');
 
 
     const finalSubmit = document.querySelector('#final-submit');
     const errorList = document.querySelector('.error-list ul');
 
     finalSubmit.addEventListener('click', e => {
-      e.preventDefault();
-
       errorList.innerHTML = "";
 
       if (applicationDate.value == "")
@@ -501,16 +512,49 @@
       if (learnerGender.value == "")
         errorList.innerHTML += "<li>Step 2: Learner Gender is not Selected</li>";
 
+      if (realtionWithParent1.value == "")
+        errorList.innerHTML += "<li>Step 3: Relation with Parent 1 is Not Selected</li>";
 
+      if (parent1title.value == "")
+        errorList.innerHTML += "<li>Step 3: Parent 1 Title is Not Selected</li>";
 
+      if (parent1FirstName.value == "")
+        errorList.innerHTML += "<li>Step 3: Parent 1 First Name is Empty</li>";
 
+      if (paren1Surname.value == "")
+        errorList.innerHTML += "<li>Step 3: Parent 1 Surname is Empty</li>";
 
+      if (parent1Email.value == "")
+        errorList.innerHTML += "<li>Step 3: Parent 1 Email is Empty</li>";
+
+      if (parent1Mobile.value == "" || parent1Mobile.value.length != 10)
+        errorList.innerHTML += "<li>Step 3: Parent 1 Mobile is not valid</li>";
+
+      if (parent1Address.value == "")
+        errorList.innerHTML += "<li>Step 3: Parent 1 Address is Empty</li>";
+
+      if (parent1City.value == "")
+        errorList.innerHTML += "<li>Step 3: Parent 1 City is Empty</li>";
+
+      if (parent1PostCode.value == "")
+        errorList.innerHTML += "<li>Step 3: Parent 1 Post Code is Empty</li>";
+
+      if (learnerIDPage.value == "")
+        errorList.innerHTML += "<li>Step 7: Learner 1 ID Page is not Uploaded</li>";
+
+      if (learnerBirthCertificate.value == "")
+        errorList.innerHTML += "<li>Step 7: Learner Birth Certificate is not Uploaded</li>";
+
+      if (parent1IDPage.value == "")
+        errorList.innerHTML += "<li>Step 7: Parent 1 ID Page is not Uploaded</li>";
 
 
       if (errorList.childElementCount)
         errorList.parentElement.classList.remove('hidden');
-      else
+      else {
         errorList.parentElement.classList.add('hidden');
+        document.querySelector('#msform').submit();
+      }
 
     })
 
