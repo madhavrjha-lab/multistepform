@@ -198,3 +198,9 @@ body {
   background: #46319b;
   color: white;
 }
+
+@media (max-width: 576px) {
+  .error-list li {
+    font-size: 0.9rem;
+  }
+}
