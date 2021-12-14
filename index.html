@@ -431,6 +431,11 @@
 
       <input type="submit" id="final-submit" value="Submit Application" />
 
+      <div class="error-list hidden">
+        <h3>The Application could not be submitted due to following errors</h3>
+        <ul></ul>
+      </div>
+
       <p>
         Please note your applicationDate ID and SID for future reference.
         <br />
@@ -449,7 +454,67 @@
     var d = new Date();
     document.getElementById("applicationDate").value = `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}`;
 
-    // Validation   
+    // Validation
+
+    const applicationDate = document.querySelector('#applicationDate');
+    const applicationID = document.querySelector('#applicationID');
+    const yearAppliedFor = document.querySelector('#yearAppliedFor');
+    const currentGrade = document.querySelector('#currentGrade');
+    const gradeApplyingFor = document.querySelector('#gradeApplyingFor');
+
+    const learnerSurname = document.querySelector('#learnerSurname');
+    const learnerFirstName = document.querySelector('#learnerFirstName');
+    const learnerDateOfBirth = document.querySelector('#learnerDateOfBirth');
+    const learnerGender = document.querySelector('#learnerGender');
+
+
+
+    const finalSubmit = document.querySelector('#final-submit');
+    const errorList = document.querySelector('.error-list ul');
+
+    finalSubmit.addEventListener('click', e => {
+      e.preventDefault();
+
+      errorList.innerHTML = "";
+
+      if (applicationDate.value == "")
+        errorList.innerHTML += '<li>Step 1: Application Date is not Selected</li>';
+
+      if (yearAppliedFor.value == "")
+        errorList.innerHTML += '<li>Step 1: Year Applied for is not Selected</li>';
+
+      if (currentGrade.value == "")
+        errorList.innerHTML += "<li>Step 1: Current Grade is not Selected</li>";
+
+      if (gradeApplyingFor.value == "")
+        errorList.innerHTML += "<li>Step 1: Grade Applying For is not Selected</li>";
+
+      if (learnerSurname.value == "")
+        errorList.innerHTML += '<li>Step 2: Learner Surname is Empty</li>';
+
+      if (learnerFirstName.value == "")
+        errorList.innerHTML += '<li>Step 2: Learner First Name is Empty</li>';
+
+      if (learnerDateOfBirth.value == "")
+        errorList.innerHTML += "<li>Step 2: Learner Date of Birth is not Selected</li>";
+
+      if (learnerGender.value == "")
+        errorList.innerHTML += "<li>Step 2: Learner Gender is not Selected</li>";
+
+
+
+
+
+
+
+      if (errorList.childElementCount)
+        errorList.parentElement.classList.remove('hidden');
+      else
+        errorList.parentElement.classList.add('hidden');
+
+    })
+
+
   </script>
 
   <script src="./js/main.js"></script>
