@@ -70,7 +70,7 @@ body {
 #msform .action-button {
   display: inline-block;
   width: 100px;
-  background: #27ae60;
+  background: #46319b;
   font-weight: bold;
   color: white;
   border: 0 none;
@@ -82,7 +82,23 @@ body {
 
 #msform .action-button:hover,
 #msform .action-button:focus {
-  box-shadow: 0 0 0 2px white, 0 0 0 3px #27ae60;
+  box-shadow: 0 0 0 2px white, 0 0 0 3px #46319b;
+}
+
+#msform input[type="submit"] {
+  display: inline-block;
+  margin: 1rem auto;
+  width: auto;
+  background-color: #4e4ee0;
+  color: #fff5f5;
+}
+
+#msform h3 {
+  font-size: 1.2rem;
+}
+
+#msform p {
+  font-size: 0.8rem;
 }
 
 .fs-title {
@@ -148,6 +164,6 @@ body {
 /*The number of the step and the connector before it = green*/
 #progressbar li.active:before,
 #progressbar li.active:after {
-  background: #27ae60;
+  background: #46319b;
   color: white;
 }
