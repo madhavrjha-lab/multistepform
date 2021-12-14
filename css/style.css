@@ -10,6 +10,11 @@ body {
   background-color: #d1d1ff;
 }
 
+.asterisk {
+  color: red;
+  font-size: 1rem;
+}
+
 /*form styles*/
 #msform {
   width: 50%;
@@ -56,7 +61,7 @@ body {
 #msform select,
 #msform option {
   padding: 10px 15px;
-  border: 1px solid #ccc;
+  border: 1px dotted #ccc;
   border-radius: 3px;
   margin-bottom: 10px;
   width: 100%;
@@ -66,7 +71,23 @@ body {
   font-size: 13px;
 }
 
+#msform input:required,
+#msform textarea:required,
+#msform select:required,
+#msform option:required {
+  border: 3px solid #ccc;
+}
+
 /*buttons*/
+
+#msform #final-submit {
+  display: inline-block;
+  margin: 1rem auto;
+  width: auto;
+  background-color: #4e4ee0;
+  color: #fff5f5;
+}
+
 #msform .action-button {
   display: inline-block;
   width: 100px;
@@ -83,14 +104,6 @@ body {
 #msform .action-button:hover,
 #msform .action-button:focus {
   box-shadow: 0 0 0 2px white, 0 0 0 3px #46319b;
-}
-
-#msform input[type="submit"] {
-  display: inline-block;
-  margin: 1rem auto;
-  width: auto;
-  background-color: #4e4ee0;
-  color: #fff5f5;
 }
 
 #msform h3 {
